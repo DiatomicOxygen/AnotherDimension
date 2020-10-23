@@ -7,4 +7,12 @@ public class ArrayOps {
     return sum;
   }
 
+  public static  int largest(int[] arr) {
+    int largestInt = -1000000;
+    for (int i = 0; i < arr.length; i++) {
+      largestInt = Math.max(largestInt, arr[i]);
+    }
+    return largestInt;
+  }
+
 }

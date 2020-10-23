@@ -5,5 +5,6 @@ public class Tester {
       a[i] += Integer.parseInt(args[i]);
     }
     System.out.println(ArrayOps.sum(a));
+    System.out.println(ArrayOps.largest(a));
   }
 }
