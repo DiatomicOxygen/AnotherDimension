@@ -4,5 +4,6 @@ public class Tester {
     for (int i = 0; i < args.length; i++) {
       a[i] += Integer.parseInt(args[i]);
     }
+    System.out.println(ArrayOps.sum(a));
   }
 }
