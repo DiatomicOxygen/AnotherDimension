@@ -14,11 +14,26 @@ public class Tester {
                    };
 
     int[] x = ArrayOps.sumRows(A);
-    System.out.println(x[0] + " " + x[1] + " " + x[2]);
+    System.out.println(arrToString(x));
 
     int[] y = ArrayOps.largestInRows(A);
-    System.out.println(y[0] + " " + y[1] + " " + y[2]);
+    System.out.println(arrToString(y));
 
     System.out.println(ArrayOps.sum(A));
+
+    int[] z = ArrayOps.sumCols(A);
+    System.out.println(arrToString(z));
+  }
+
+  public static String arrToString(int[] arr){
+    String a = "{";
+    for (int i = 0; i < arr.length; i++) {
+      a += arr[i];
+      if (i != arr.length - 1) {
+        a += ", ";
+      }
+    }
+    a += "}";
+    return a;
   }
 }
