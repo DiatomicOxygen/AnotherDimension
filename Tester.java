@@ -38,6 +38,10 @@ public class Tester {
     System.out.println(ArrayOps.isRowMagic(B));
     System.out.println(ArrayOps.isRowMagic(C));
     System.out.println(ArrayOps.isRowMagic(D));
+
+    System.out.println(ArrayOps.isColMagic(B));
+    System.out.println(ArrayOps.isColMagic(C));
+    System.out.println(ArrayOps.isColMagic(D));
   }
 
   public static String arrToString(int[] arr){
