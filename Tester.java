@@ -12,9 +12,13 @@ public class Tester {
                       {  7, -2,  2,  1 },
                       { -5, -2,  2, -9 }
                    };
+
     int[] x = ArrayOps.sumRows(A);
-    System.out.print(x[0]);
-    System.out.print(" " + x[1]);
-    System.out.print(" " + x[2]);
+    System.out.println(x[0] + " " + x[1] + " " + x[2]);
+
+    int[] y = ArrayOps.largestInRows(A);
+    System.out.println(y[0] + " " + y[1] + " " + y[2]);
+
+
   }
 }
