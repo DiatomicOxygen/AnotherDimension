@@ -30,5 +30,10 @@ public class ArrayOps {
     }
     return largestIntArr;
   }
-  
+
+  public static int sum(int[][] arr) {
+    int[] x = sumRows(arr);
+    int sum = sum(x);
+    return sum;
+  }
 }

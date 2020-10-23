@@ -19,6 +19,6 @@ public class Tester {
     int[] y = ArrayOps.largestInRows(A);
     System.out.println(y[0] + " " + y[1] + " " + y[2]);
 
-
+    System.out.println(ArrayOps.sum(A));
   }
 }
