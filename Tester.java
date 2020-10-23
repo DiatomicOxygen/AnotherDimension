@@ -23,6 +23,21 @@ public class Tester {
 
     int[] z = ArrayOps.sumCols(A);
     System.out.println(arrToString(z));
+
+    int[][] B = {{1,  2, 3, 4 },
+                {  2, 3,  4,  1},
+                { 3, 4,  1, 2 } };
+
+    int[][] C = { {  1,  1, 1 },
+                {  2, 2, 2 },
+                { 3,  3, 3 } };
+
+    int[][] D = { {  2,  2, 2 },
+                {  2, 2, 2 } };
+
+    System.out.println(ArrayOps.isRowMagic(B));
+    System.out.println(ArrayOps.isRowMagic(C));
+    System.out.println(ArrayOps.isRowMagic(D));
   }
 
   public static String arrToString(int[] arr){
